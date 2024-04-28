@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">practice 2_6</string>
+    <string name="user_name">Анатолий Горшков РИБО-04-22</string>
+    <string name="start_button">Запуск!</string>
+    <string name="variant">Вариант 3</string>
+
+    <string name="number1">Первое число</string>
+    <string name="number2">Второе число</string>
+    <string name="number3">Третье число</string>
+    <string name="task">Введите сначала число, из которого программа будет вычитать числа, а затем сами эти числа</string>
+    <string name="subtract">Вычесть</string>
+</resources>
