@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         new ActivityResultContracts.StartActivityForResult(),
         o -> {
             if (o.getData() != null) {
-                int res = o.getData().getIntExtra("data", 0);
-                Log.d("tag", "onActivityResult: " + res);
+                double res = o.getData().getDoubleExtra("data", 0);
+                Log.d("tag", "Получено значение: " + res);
                 textView.setText("Разница чисел: " + res);
             }
         }

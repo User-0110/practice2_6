@@ -2,6 +2,7 @@ package com.example;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,7 +27,8 @@ public class WorkActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (v.getId() == R.id.work_button) {
                     if (!editText1.getText().toString().isEmpty() && !editText2.getText().toString().isEmpty() && !editText3.getText().toString().isEmpty()) {
-                        int result = Integer.parseInt(editText1.getText().toString()) - Integer.parseInt(editText2.getText().toString()) - Integer.parseInt(editText3.getText().toString());
+                        double result = Double.parseDouble(editText1.getText().toString()) - Double.parseDouble(editText2.getText().toString()) - Double.parseDouble(editText3.getText().toString());
+                        Log.d("Tag", "Посчитано значение");
                         Intent intent = new Intent();
                         intent.putExtra("data", result);
                         setResult(RESULT_OK, intent);
